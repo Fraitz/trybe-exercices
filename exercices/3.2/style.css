@@ -1,0 +1,45 @@
+h1 {
+  font-size: 65px;
+  color: orange;
+  font-family: sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+p {
+  font-weight: 600px;
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+}
+
+#azul {
+  background-color: #01579b;
+}
+
+#laranja {
+  background-color: #bf360c;
+}
+
+#vermelho {
+  background-color: #b71c1c;
+}
+
+li {
+  margin-top: 4px;
+}
+
+#lista-de-cores {
+  text-align: center;
+  font-family: Helvetica;
+  color: white;
+  font-size: 2em;
+  line-height: 80px;
+  margin-top: 4px;
+  margin-right: 500px;
+  margin-bottom: 100px;
+  margin-left: 500px;
+}
