@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  background-color: darkcyan;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.lado-esquerdo {
+  float: left;
+}
+
+.lado-direito {
+  float: right;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  background-color: darkslategrey;
+  width: 100%;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+#minha_foto {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.imagem {
+  max-width: 50%;
+}
+
+.historia {
+  width: 50%;
+}
+
+.header-historia {
+  background-color: red;
+  text-align: center;
+  height: 2.3rem;
+}
+
+.header-historia h1 {
+  font-size: 2.1rem;
+}
+
+.historia p {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: Courier New, Courier, monospace;
+}
+
+#rodape {
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.container_licoes {
+  display: flex;
+}
+
+.aprendidas {
+  width: 25%;
+  text-align: center;
+}
+
+.oque_vou_aprender {
+  width: 50%;
+  text-align: center;
+  font-family: Courier New, Courier, monospace;
+}
+
+.tabela {
+  margin: 0 auto;
+}
+
+.espaco {
+  margin: 2rem;
+}
+
+.espaco p {
+  margin: 1rem;
+}
