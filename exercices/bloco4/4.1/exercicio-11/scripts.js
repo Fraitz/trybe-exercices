@@ -1,4 +1,4 @@
-let salary = 8900;
+let salary = 6000;
 let inss;
 let ir;
 let liquid;
