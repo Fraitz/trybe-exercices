@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #header-container {
+    color: white;
+    padding: 20px 0px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .emergency-tasks {
+    display: inline-block;
+    height: 400px;
+    margin: 150px 0px 0px 0px;
+    width: 400px;
+  }
+  
+  .emergency-tasks div {
+    height: 200px;
+  }
+  .emergency-tasks h3 {
+    color: white;
+    padding: 10px 0px;
+    margin: 0;
+    width:100%;
+  }
+  
+  .no-emergency-tasks {
+    display: inline-block;
+    height: 400px;
+    margin: 15px 0px 90px 0px;
+    width: 400px;
+  }
+  
+  .no-emergency-tasks div {
+    height: 200px;
+  }
+  
+  .no-emergency-tasks h3 {
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  #footer-container {
+    color: white;
+    font-weight: 700;
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+  }
