@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Curriculum Vitae</h1>
+  </header>
+  <div class="row content">
+    <form action="" method="get" class="col s12">
+      <main>
+        <fieldset>
+          <legend>Informação Pessoal</legend>
+        
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="name-input">Nome</label>
+              <input type="text" name="Nome" id="name-input" class="validate" value="" autocomplete="off">
+            </div>
+        
+            <div class="input-field col s4">
+              <label for="cpf-input">CPF</label>
+              <input type="text" name="CPF" id="cpf-input" class="validate" value="" autocomplete="off">
+            </div>
+        
+            <div class="input-field col s4">
+              <label for="email-input">E-Mail</label>
+              <input type="email" name="E-mail" id="email-input" class="validate" value="" autocomplete="off">
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="address-input">Endereço</label>
+              <input type="text" name="Endereço" id="address-input" class="validate" value="" autocomplete="off">
+            </div>
+        
+            <div class="input-field col s4">
+              <label for="city-input">Cidade</label>
+              <input type="text" name="Cidade" id="city-input" class="validate" value="" autocomplete="off">
+            </div>
+        
+            <div class="input-field col s4">
+              <select name="Estado" id="state-combo" class="info">
+                <option value disabled selected></option>
+              </select>
+              <label for="state-combo">Estado</label>
+            </div>
+          </div>
+        
+          <div class="row radio-section">
+            <p>
+              <label class="input-field col s4">
+                <input type="radio" name="group1" checked>
+                <span>Apartamento</span>
+              </label>
+            </p>
+            <p>
+              <label class="input-field col s4">
+                <input type="radio" name="group1">
+                <span>Casa</span>
+              </label>
+            </p>
+          </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend id="last-job"><span>Último Emprego</span></legend>
+        
+          <div class="row job">
+            <div class="input-field col s10">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Resumo</label>
+            </div>
+          </div>
+        
+          <div class="row job">
+            <div class="input-field col s5">
+              <label for="cargo">Cargo</label>
+                <input type="text" name="cargo" class="job-info" autocomplete="off">
+            </div>
+        
+            <div class="input-field col s5">
+              <input type="text" class="datepicker" name="date">
+              <label for="date">Data de Início</label>
+            </div>
+          </div>
+          
+          <div class="row job">
+            <div class="input-field col s10">
+              <textarea id="textarea2" class="materialize-textarea"></textarea>
+              <label for="textarea2">Descrição</label>
+            </div>
+          </div>
+        
+        
+        </fieldset>
+      </main>
+
+      <section id="buttons">
+        <button class="btn waves-effect waves-light blue accent-3" type="submit" name="action">Enviar
+          <i class="material-icons right">send</i>
+        </button>
+        <button class="btn waves-effect waves-light red" type="reset" name="reset">Apagar
+          <i class="material-icons right">cancel</i>
+        </button>
+      </secion>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset id="inputsMain">
+      <h4>Informações Cadastrais</h4>
+      <div id="nomeDiv">
+          <label for="nomeCompleto">Nome Completo:
+            <input type="text" name="nome" id="nomeCompleto"  maxlength="40" required>
+          </label>
+      </div>
+      <div id="emailDiv">
+      <label for="email">E-mail:
+        <input type="text" name="e-mail" id="email" maxlength="40" required>
+      </label>
+      </div>
+      <div id="cpfDiv">
+      <label for="cpf">CPF:
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      </label>
+      </div>
+      <div id="enderecoDiv">
+      <label for="endereco">Logradouro:
+        <input type="text" name="endereco" id="endereco" maxlength="200" required>
+      </label>
+      </div>
+      <div id="cidadeDiv">
+        <label for="cidade">Cidade:
+        <input type="text" cidade="cidade" id="cidade"  maxlength="28" required>
+        </label>
+      </div>
+      <div id="estadosDiv>
+        <label for="estados">Estado:
+          <select name="estado" id="estados" required></select>
+        </label>
+      </div>
+      <div id="moradiaDiv">
+        <p>Tipo de Moradia</p>
+        <label for="casa">
+          <input type="radio" name="tipoDeMoradia" id="casa"  value="Casa" required>Casa
+        </label>
+        <label for="apartamento">
+          <input type="radio" name="tipoDeMoradia"  id="apartametno" value="Apartamento" required checked>Apartamento
+        </label>
+      </div>
+    </fieldset>
+    <fieldset id="inputsCarreira">
+        <h4>Informações do Seu Último Emprego</h4>
+      <div id="divResume">
+        <label for="resume">Resumo do Currículo
+          <textarea name="resumoCurriculo" id="resume" required></textarea>
+        </label>
+      </div>
+      <div id="divCargoAtual"> 
+        <label for="cargoAtual">Cargo Atual
+          <input type="text" name="cargoAtual" id="cargoAtual" required>
+        </label>
+      </div>   
+      <div id="divDescricao">
+        <label for="descricaoCargo">Descrição do Cargo
+          <input type="text" name="descricao" id="descricaoCargo" maxlength="500" required>
+        </label>
+      </div>
+      <div id="divDate">
+        <label for="date">Data de Início
+          <input type="text" id="data" name="date" maxlength="10">
+        </label>
+      </div>
+    </fieldset>
+    <button type="submit" id="enviar">Enviar Formulário</button>
+    <button type="reset" id="clear">Limpar Formulário</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
