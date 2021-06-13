@@ -9,3 +9,5 @@ Para acessar o código deste exercício basta clicar no botão abaixo:
 <button>
 <a href="https://github.com/Fraitz/exercise-tech-gallery" target="_blank">Repositório do Exercício</a>
 </button>
+
+[Link button](http://example.com/){: .btn .btn-blue }
