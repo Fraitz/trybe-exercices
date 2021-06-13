@@ -1,0 +1,76 @@
+:root {
+  --blue-accent-3: #448aff;
+}
+body {
+  background-color:rgb(220, 239, 255);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 3%;
+  font-weight: 600;
+  color: #448aff
+}
+
+.content {
+  width: 90%;
+}
+
+
+fieldset {
+  border: 2px solid #448aff;
+  border-radius: 5px;
+  text-align: center;
+  background-color:aliceblue;
+  margin-bottom: 2%;
+}
+
+legend {
+  color: rgb(145, 145, 168);
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 2px solid #448aff;
+}
+
+.datepicker-modal {
+  max-width: 50%;
+}
+
+[type="radio"]:checked+span:after {
+  background-color: #448aff;
+  border: 2px solid #448aff;
+}
+
+input {
+  font-size: 10px;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #448aff;
+    border-right: 2px solid #448aff;
+    box-shadow: 0 1px 0 0 #448aff;
+    border-radius: 3px;
+    max-height: 10%;
+}
+
+.radio-section {
+  display: flex;
+  justify-content: center;
+}
+
+.job {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hiddendiv {
+  max-width: 100%;
+}
