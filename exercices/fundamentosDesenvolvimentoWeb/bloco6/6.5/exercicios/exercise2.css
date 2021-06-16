@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width:625px) {
+  nav {
+    display: none;
+  }
+
+  header p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .lateral {
+    background-color: rgb(223, 223, 223);
+    margin: 0 !important;
+    padding: 30px;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  main-content {
+    flex: 1 1 300px; 
+    margin: 0;
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px 0;    
+  }
+  
+}
+
+@media screen and (max-width:755px) {
+  header p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .lateral {
+    background-color: rgb(223, 223, 223);
+    margin: 0 !important;
+    padding: 30px;
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (max-width:2999px) {
+  header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+
+  header p {
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  nav {
+    flex: 1 1 auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin-right: 30px;;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .lateral {
+    background-color: rgb(223, 223, 223);
+    margin: 0 20px 0 0;
+    padding: 30px;
+  }
+
+  .main-content {
+    flex: 1 1 300px; 
+    margin: 0 30px 0 20px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 30px 0;    
+  }
+
+  .main-content h1 {
+    font-size: 24px;
+  }
+
+  footer {
+    margin: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+  
+}
+
+
+/* Utilizando a abordagem mobile first e media queries , crie três versões de layout diferentes para essa página . Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande) .
+Faça pelo menos um commit para cada layout ;
+Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+Onde a lista de capítulos deve estar posicionada?
+Como a história deve ser mostrada?
+Como o cabeçalho deve ser posicionado?
+O que fazer com as informações do autor em cada tamanho de tela?
+Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página. */
