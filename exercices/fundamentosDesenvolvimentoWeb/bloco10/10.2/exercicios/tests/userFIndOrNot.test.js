@@ -1,4 +1,6 @@
-const { findUserById, getUserName } = require('../funcoes/users');
+const { getUserName } = require('../funcoes/users');
+
+const idReject = 0; // ID a ser testada para os casos em que a promessa deve retornar Rejected
 
 describe('Testando usuários encontrados e não encontrados', () => {
   it('usuário é encontrado', () => {
@@ -7,8 +9,7 @@ describe('Testando usuários encontrados e não encontrados', () => {
 
   it('Testa usuário não encontrado', () => {
     expect.assertions(1);
-    const id = 0;
-    return getUserName(id).catch(data => expect(data).toEqual({error: `User with ${id} not found.`}));
+    return getUserName(idReject).catch(data => expect(data).toEqual({error: `User with ${idReject} not found.`}));
   })
 });
 
@@ -19,15 +20,10 @@ describe('Testando usuários encontrados e não encontrados [async/await]', () =
 
   it('Testa usuário não encontrado [async/await]', async () => {
     expect.assertions(1);
-    const id = 4;
-    const id1 = 5;
-    const id2 = 0;
     try {
-      await getUserName(id);
-      await getUserName(id1);
-      await getUserName(id2);
+      await getUserName(idReject);
     } catch (error) {
-    expect(error).toEqual({error: `User with ${id2} not found.`});
+    expect(error).toEqual({error: `User with ${idReject} not found.`});
     }
   })
 })
